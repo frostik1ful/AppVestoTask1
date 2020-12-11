@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AppVestoTask1</string>
+    <string name="loadData">Load Data</string>
+    <string name="sortData">Sort Data</string>
+</resources>
