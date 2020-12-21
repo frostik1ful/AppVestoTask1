@@ -35,8 +35,10 @@ class MainActivity : AppCompatActivity() {
                     sortButton.isEnabled = true
                     updateData(nameLayout, timeLayout, dataList)
                 }
-                loadingImage.clearAnimation()
-                loadingImage.visibility = View.INVISIBLE
+                runOnUiThread {
+                    loadingImage.clearAnimation()
+                    loadingImage.visibility = View.INVISIBLE
+                }
             }.start()
         }
         sortButton.setOnClickListener {
